@@ -732,21 +732,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4937031322299391562, guid: 3a86ea75dd402e545881e92c085cb309,
-        type: 3}
-      propertyPath: m_ColliderMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937031322299391562, guid: 3a86ea75dd402e545881e92c085cb309,
-        type: 3}
-      propertyPath: m_UseOneWay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937031322299391562, guid: 3a86ea75dd402e545881e92c085cb309,
-        type: 3}
-      propertyPath: m_UseSideFriction
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a86ea75dd402e545881e92c085cb309, type: 3}
 --- !u!1001 &1169773709
