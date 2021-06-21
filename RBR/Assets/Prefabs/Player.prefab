@@ -49,9 +49,10 @@ GameObject:
   - component: {fileID: 1950704734603492645}
   - component: {fileID: 1950704734603492644}
   - component: {fileID: 1950704734603492647}
+  - component: {fileID: 1950704733484792767}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7e1167b407aa54db30edf76fe7e863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 400
+  dashSpeed: 200
   startDashTime: 0.1
 --- !u!114 &1950704734603492647
 MonoBehaviour:
@@ -277,3 +278,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {fileID: 1950704733377066833}
   boxSize: {x: 3, y: 2}
+--- !u!114 &1950704733484792767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950704734603492658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9633fe41f6f1f1141811a641aa2b9413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    X: 0
+    Y: 4
+    Hp: 10
+    isCleared: 00000000

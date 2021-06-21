@@ -6,17 +6,27 @@ using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource music;
-    static AudioSource instance;
+    public AudioSource Sfx;
+    static AudioSource instance1;
+    static AudioSource instance2;
 
     private void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(music);
-            return;
-        }
-        instance = music;
-        DontDestroyOnLoad(music);
+        //if (instance1 != null)
+        //{
+        //    Destroy(music);
+        //    return;
+        //}
+        //instance1 = music;
+        //DontDestroyOnLoad(music);
+
+        //if (instance2 != null)
+        //{
+        //    Destroy(Sfx);
+        //    return;
+        //}
+        //instance2 = Sfx;
+        //DontDestroyOnLoad(Sfx);
     }
 
     public void SetMusicVolume(float value)
@@ -24,15 +34,27 @@ public class SoundManager : MonoBehaviour
         music.volume = value;
     }
 
+    public void SetSFXVolume(float value)
+    {
+        Sfx.volume = value;
+    }
+
     public void SetMuteToggle(Toggle toggle)
     {
         if (toggle.isOn)
         {
             music.mute = true;
+            Sfx.mute = true;
         }
         else
         {
             music.mute = false;
+            Sfx.mute = false;
         }
+    }
+
+    public void UseSFX()
+    {
+        Sfx.Play();
     }
 }
