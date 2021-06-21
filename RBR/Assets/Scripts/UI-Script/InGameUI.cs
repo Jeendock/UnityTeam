@@ -9,6 +9,7 @@ public class InGameUI : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -21,12 +22,18 @@ public class InGameUI : MonoBehaviour
     public void ButtonOptionClicked()
     {
         if (ingameMenu.activeSelf == false)
+        {
             ingameMenu.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
         else
+        {
             ingameMenu.SetActive(false);
+            Time.timeScale = 1.0f;
+        }
     }
 
-    public void GoMainMenu()
+    public void GoMainMenuButton()
     {
         SceneManager.LoadScene("MenuScene");
     }

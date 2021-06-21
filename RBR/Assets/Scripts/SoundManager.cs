@@ -6,9 +6,16 @@ using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource music;
+    static AudioSource instance;
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(music);
+            return;
+        }
+        instance = music;
         DontDestroyOnLoad(music);
     }
 
