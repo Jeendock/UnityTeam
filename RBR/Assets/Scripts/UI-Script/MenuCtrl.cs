@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class MenuCtrl : MonoBehaviour
 {
     public GameObject[] button;
-    public GameObject select;
+    public GameObject exitMenu;
+    public GameObject optionMenu;
 
     public void ButtonStartClicked()
     {
@@ -16,12 +17,17 @@ public class MenuCtrl : MonoBehaviour
 
     public void ButtonOptionClicked()
     {
-        // 블라 블라~;
+        optionMenu.SetActive(true);
+    }
+
+    public void ButtonCloseClicked()
+    {
+        optionMenu.SetActive(false);
     }
 
     public void ButtonExitClicked()
     {
-        select.SetActive(true);
+        exitMenu.SetActive(true);
     }
 
     public void ButtonYesClicked()
@@ -35,6 +41,6 @@ public class MenuCtrl : MonoBehaviour
 
     public void ButtonNoClicked()
     {
-        select.SetActive(false);
+        exitMenu.SetActive(false);
     }
 }
