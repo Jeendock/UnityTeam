@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
       propertyPath: m_TagString
-      value: Platform
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2063420267566427567, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
@@ -220,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
       propertyPath: m_TagString
-      value: Platform
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2063420267566427567, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
@@ -289,6 +289,11 @@ PrefabInstance:
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
       propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
+        type: 3}
+      propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2063420267566427567, guid: edf252db866954f4298f0d42d2e11939,
@@ -448,6 +453,31 @@ MonoBehaviour:
   speed: 3
   center: {x: 0, y: 10}
   size: {x: 60, y: 20}
+--- !u!1 &521418505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
+    type: 3}
+  m_PrefabInstance: {fileID: 1169773709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &521418506
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521418505}
+  m_Enabled: 1
+  m_UseColliderMask: 0
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &635573202
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238ced50c5b71f24f98b2c81a344b619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingameMenu: {fileID: 0}
 --- !u!4 &635573204
 Transform:
   m_ObjectHideFlags: 0
@@ -741,6 +772,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2063420267566427537, guid: edf252db866954f4298f0d42d2e11939,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
       propertyPath: m_Name
@@ -749,7 +785,7 @@ PrefabInstance:
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2063420267566427538, guid: edf252db866954f4298f0d42d2e11939,
         type: 3}

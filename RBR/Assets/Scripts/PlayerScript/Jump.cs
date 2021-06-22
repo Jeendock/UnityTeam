@@ -17,7 +17,8 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W) && playerBody.velocity.normalized.y == 0 && !playerAnimator.GetBool("isFalling"))
+        if (Input.GetKey(KeyCode.W) && playerBody.velocity.normalized.y == 0
+            && !playerAnimator.GetBool("isFalling"))
         {
             playerAnimator.SetTrigger("Jump");
             playerAnimator.SetTrigger("Falling");

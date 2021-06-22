@@ -10,24 +10,24 @@ public class SoundManager : MonoBehaviour
     static AudioSource instance1;
     static AudioSource instance2;
 
-    private void Awake()
-    {
-        //if (instance1 != null)
-        //{
-        //    Destroy(music);
-        //    return;
-        //}
-        //instance1 = music;
-        //DontDestroyOnLoad(music);
+    //private void Awake()
+    //{
+    //if (instance1 != null)
+    //{
+    //    Destroy(music);
+    //    return;
+    //}
+    //instance1 = music;
+    //DontDestroyOnLoad(music);
 
-        //if (instance2 != null)
-        //{
-        //    Destroy(Sfx);
-        //    return;
-        //}
-        //instance2 = Sfx;
-        //DontDestroyOnLoad(Sfx);
-    }
+    //if (instance2 != null)
+    //{
+    //    Destroy(Sfx);
+    //    return;
+    //}
+    //instance2 = Sfx;
+    //DontDestroyOnLoad(Sfx);
+    //}
 
     public void SetMusicVolume(float value)
     {
